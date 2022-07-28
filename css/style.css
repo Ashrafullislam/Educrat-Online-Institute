@@ -1,0 +1,55 @@
+/* google fonts poppins link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+/* navbar start here  */
+a.navbar-brand {
+    margin-top: -11px!important;
+}
+/* navbar end here  */
+
+/* carosel section start here  */
+.carousel-item{
+    
+   width: 100%;
+   height: 80vh;
+   min-height: 300px;
+   background-size: cover;
+   background: no-repeat scroll center scroll;
+   -webkit-background-size: cover;
+   cursor: pointer;
+
+}
+.carousel-item::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: .7;
+
+}
+img.d-block.w-100.banner-size {
+    height: 80vh;
+ 
+}
+.carousel-caption{
+    bottom: 20vh;
+
+}
+/* carosel section end here  */
+
+
+
+
+/*------- media query section start here ------- */
+ @media screen and (max-width:768px){
+  
+ }
