@@ -58,14 +58,14 @@ img.d-block.w-100.banner-size {
 .arro-icon{
     background-color: aquamarine!important;
     cursor: pointer;
-    margin-left: -20px;
+    margin-left: -25px;
 }
 .arro-icon:hover{
    
     background-color: blue!important;
 }
 .arro-icon-right{
-    margin-right: -20px;
+    margin-right: -25px;
     background-color: aquamarine;
 
 }
@@ -76,6 +76,3 @@ img.d-block.w-100.banner-size {
 
 
 /*------- media query section start here ------- */
- @media screen and (max-width:768px){
-  
- }
