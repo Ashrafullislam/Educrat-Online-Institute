@@ -76,7 +76,16 @@ img.d-block.w-100.banner-size {
     background-color: blue;
 } */
 /* feedback section end here  */
-
+ 
 
 /* footer section start here  */
-
+a{
+    color:white;
+}
+.social{
+    color: lightblue!important;
+    
+}
+.social:hover{
+    color:gray!important;
+}

@@ -45,7 +45,7 @@
             </button>
             <button type="button"
               class="btn btn-primary mx-4 d-md-block d-xl-none d-xxl-none d-lg-none d-md-block d-none"
-              id="register_btn">Register</button>
+              id="register_btn" data-bs-toggle="modal" data-bs-target="#myModal" >Register</button>
           </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,16 +73,14 @@
               <li class="nav-item">
                 <a class="nav-link " href="#">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#register">Register</a>
-              </li>
             </ul>
+            
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
               <button type="button"
                 class="btn btn-primary mx-4 d-md-none d-xl-block d-xxl-block d-lg-block d-md-none d-block"
-                id="register_btn">Register</button>
+                id="register_btn" data-bs-toggle="modal" data-bs-target="#myModal" >Register</button>
 
             </form>
           </div>
@@ -343,7 +341,7 @@
 
 
     <!------- Ready to join section start here  ------->
-    <section class="my-5 py-5 px-lg-0 px-xl-0 px-xxl-0 px-4" id="register">
+    <section class="mt-5 pt-5 px-lg-0 px-xl-0 px-xxl-0 px-4" id="register">
       <div class="container bg-primary">
         <div class="row py-5">
           <div class="col-12 py-5">
@@ -357,13 +355,73 @@
               </div>
 
               <div>
-                <button class="btn btn-light text-primary fs-4 fw-semibold">Register Now</button>
+                <button type="button" class="btn btn-light text-primary px-4 py-2 fw-semibold fs-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                  Register Now
+                </button>
               </div>
             </div>
 
           </div>
         </div>
       </div>
+
+      <!-- modal start here  -->
+       
+      <div class="container mt-3">
+
+        <!-- The Modal -->
+          <div class="modal" id="myModal">
+           <div class="modal-dialog">
+            <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header text-center">
+              <h3 class="modal-title text-center"> Sign up</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <!-- form -->
+      
+           <form>
+          <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+           </div>
+           <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+           </div>
+           <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Agree with Terms & Condition</label>
+          </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+      
+            <div>
+              <p>Sign up with another account</p>
+              <a href="#"><img src="images/Icon/facebook.png" class="mx-3" alt="facebook icon"> </a>
+              <a href="#"> <img src="images/Icon/google.png" class="mx-2"  alt =" google icon"></a>
+            </div>
+           </form>
+      
+             <!-- form end  -->
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+           </div>
+          </div>
+         </div>
+      </div> 
+
+     <!-- model end here  -->
+
     </section>
 
     <!------ Ready to join section end here  -------->
@@ -676,14 +734,20 @@
 
 
 <!--^^^^^^^^^^^^^^^ footer section start here  ^^^^^^^^^^^^^-->
-    <footer class="bg-dark h-100 mt-5">
+    <footer class="bg-black mt-5">
       <div class="container d-flex justify-content-center align-items-center py-5">
         <div class="footer-info text-capitalize text-center">
           <h2 class="text-light">Educrat Online</h2>
           <p class="text-white">Office 41, Zawaya Buildin,<br> Ghala Muscat, 
             Sultanate of Oman</p>
             <a href="#" class="text-white text-decoration-none text-muted" > Privacy Policy । Terms & Conditions</a>
-            <div>
+            <div class="d-flex justify-content-center mt-3">
+            <div class="mx-1"> <a href="https://www.facebook.com/profile.php?id=100011440806051"> 
+              <i class="fa-brands fa-square-facebook social fs-3"></i></a></div>
+            <div class="mx-1"><a href="#">  <i class="fa-brands fa-square-instagram  social fs-3"></i> </a> </div>
+            <div class="mx-1"> <a href="#"> <i class="fa-brands fa-square-twitter social fs-3"></i> </a> </div>
+            <div class="mx-1"> <a href="#"><i class="fa-brands fa-linkedin fs-3 social  "></i> </a> </div>
+
 
             </div>
         </div>
