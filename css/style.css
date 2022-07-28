@@ -46,7 +46,33 @@ img.d-block.w-100.banner-size {
 }
 /* carosel section end here  */
 
+/* feedback section start here  */
+.fa-star{
+    color: orange;
+}
+.fa-star-half-stroke{
+ color: gold;
 
+}
+
+.arro-icon{
+    background-color: aquamarine!important;
+    cursor: pointer;
+    margin-left: -20px;
+}
+.arro-icon:hover{
+   
+    background-color: blue!important;
+}
+.arro-icon-right{
+    margin-right: -20px;
+    background-color: aquamarine;
+
+}
+.arro-icon-right:hover{
+    background-color: blue;
+}
+/* feedback section end here  */
 
 
 /*------- media query section start here ------- */
